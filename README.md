@@ -1,4 +1,4 @@
-# Estas en "Estructura Web"
+# Estás en "Estructura Web"
 
 ### Podes ir a:
 - [Rama Master](https://github.com/giselarevalo/mercadoLiebre/tree/master) 
