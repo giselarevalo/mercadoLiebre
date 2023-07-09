@@ -1,98 +1,71 @@
-/* HEADER */
+/* MAIN ------------------------------*/
 
-
-
-.home__header img{
-    width: 200px;
-    height: auto;
-    text-align: left;
-    padding: 20px ;
-}
-
-
-.home__header form{
+/* MOBILE */
+.home__main{
+    background-color: var(--colorGrisClaro);
     text-align: center;
+    width: 100%;
 }
 
+.home__main__div--banner{
+    width: 100%;
+}
 
-.home__header__div{
+.home__main section {
     width: 100%;
     text-align: center;
-    margin: 10px;
-}
-
-.home__header__div h4{
-    display: inline;
-}
-
-
-.home__header nav{
-    padding: 0px 20px;
-    margin: 20px;
-}
-
-.home__header nav ul li {
-    text-align: left;
-}
-
-.home div,nav i{
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.home__header__div--bar {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    padding: 20px 0 20px;
-    margin: 0px;
-}
-
-.home__header__div--bar a{
-    background-color: var(--colorCeleste);
-    color: var(--colorBlanco);
-    padding: 8px 12px;
-    border-radius: 4px;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     
 }
 
-/* MAIN ------------------------------*/
-
-.home__main{
-    background-color: var(--colorGrisClaro);
-    padding: 20px 0;
-    width: 100%;
-    text-align: center;
-}
-
-.home__main section{
-    text-align: center;
-    width: 100%;
-}
-
-.home__main h2{
+.home__main section h2{
     padding: 20px 0 20px;
     text-align: center;
+    color: var(--colorGrisOscuro);
 }
 
 .home__main__div--card{
     background-color: var(--colorBlanco);
-    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+.home__main__div--card div.foto_producto{
+    
     height: auto;
     text-align: center;
-    
-    padding: 20px 0px;
-    
+}
+
+.home__main__div--card div.envio{
+    border-radius: 100%;
+    border: 1px solid var(--colorVerde);
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.home__main__div--card div.envio i{
+    color: var(--colorVerde);
+}
+
+.home__main__div--card--description{
+    text-align: left;
+    padding: 15px;
+    border-top: 1px solid var(--colorGrisClaro);
+}
+
+.home__main__div--card--description h4{
+    color: var(--colorVerde);
     
 }
 
-
-.home__main img.productos{
-    width: 280px;
-    height: auto;
+.home__main__div--card--description p{
+    display: none;
 }
+
+
+
 
 /* FOOTER ------------------------------*/
 
@@ -107,9 +80,9 @@
 }
 
 .home__footer section i{
-    font-size: 2rem;
+    font-size: 2em;
     color: var(--colorCeleste);
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .home__footer section p{
@@ -125,5 +98,21 @@
     font-size: 12px;
     text-align: left;
     padding-top: 30px;
+    
+}
+
+
+/* MEDIAS QUERIES */
+
+/* TABLET */
+@media (min-width:481px){
+    .home__main__div--card--description p{
+        display:inline-block;
+        padding-top: 20px;
+    }
+    
+    .home__main__div--card{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
     
 }

@@ -5,9 +5,10 @@
 }
 
  :root{
-     /* Tipografias*/
+    
+    /* Tipografias*/
 
-     --tipografiaGeneral: 'Roboto';
+    --tipografiaGeneral: 'Roboto';
 
     /* Paleta de colores */
     --colorBlanco: #fff;
@@ -22,7 +23,7 @@
 
  body {
     font-family: var(--tipografiaGeneral);
-    font-size: 12px;
+    font-size: 1em;
     font-weight: 400;
     background-color: var(--colorAmarillo);
 }
@@ -47,21 +48,26 @@ a {
 
 h2{
     font-family: var(--tipografiaGeneral);
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 h3{
     font-family: var(--tipografiaGeneral);
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 h4{
     font-family: var(--tipografiaGeneral);
-    font-size: 16px;
+    font-size: 1em;
 }
 
 p{
     font-family: var(--tipografiaGeneral);
-    font-size: 16px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--colorGrisOscuro);
 }
 
+img{
+    width: 100%;
+}
