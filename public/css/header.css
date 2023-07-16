@@ -5,18 +5,59 @@ header{
     width: 100%;
 }
 
+header div.head-top{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header div.head-top figure{
+    width: 50%;
+}
 
 header figure img.logo-ml{
-    width: 200px;
+    width: 100%;
     height: auto;
     text-align: left;
     padding: 20px ;
 }
 
+/*Buscador */
+header div.head-top div.buscador{
+    width: 50%;
+    padding: 2%;
+}
 
-header form{
-    text-align: left;
-    margin: 10px 20px ;
+header div.head-top div.buscador form{
+    display: inline;
+}
+
+header div.head-top div.buscador .contenedor-input{
+    position: relative;
+}
+   
+
+
+header div.head-top div.buscador input{
+    width: 100%;
+    border: 1px solid silver;
+    padding: 5px 30px 5px 5px;
+    border-radius: 5px;
+}
+
+header div.head-top div.buscador button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+header div.head-top div.buscador button i{
+    color: var(--colorGrisOscuro);
 }
 
 
@@ -65,8 +106,20 @@ header div.contenedor-burguer-menu a{
 /* TABLET */
 
 @media (min-width:481px){
-    
-   
+
+    header div.head-top figure{
+        width: 33.3%;
+        
+    }
+    header div.head-top div.buscador{
+        width: 33.3%;
+    }
+
+    header div.titular{
+        width: 33.3%;
+    }
+
+   /* menu */
     header nav.contenedor-menu{
         display: block;
         padding: 0px 20px;
@@ -81,4 +134,17 @@ header div.contenedor-burguer-menu a{
         display: none;
     }
     
+    header nav.contenedor-menu{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+    }
+    header nav.contenedor-menu ul{
+        display: flex;
+    }
+    header nav.contenedor-menu ul li{
+        padding-right: 20px;
+    }
+    
+
 }
