@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Mercado Liebre</title>
+    <script src="https://kit.fontawesome.com/a77ac5db8b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="head-top">
+            <!-- LOGO MERCADO LIEBRE -->
+            <figure>
+                <img class="logo-ml" src="/img/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+            </figure>
+            <!-- BUSCADOR -->
+            <div class="buscador">
+                <form action="#">
+                    <div class="contenedor-input">
+                        <input type="text" placeholder="Buscar productos, marcas"> 
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="titular">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h4> Comprá en cuotas y sin tarjeta de crédito</h4>
+            </div>
+        </div>
+        <!-- MENU -->
+        <nav class="contenedor-menu">
+            <ul class="opciones1">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="opciones2">
+                <li><a href="register">Créa tu cuenta <i class="fas fa-id-card"></i></a></li>
+                <li><a href="">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <!-- BURGUER MENU -->
+        <div class="contenedor-burguer-menu">
+            <button class="burguer-menu">
+                <a href="#"><i class="fa fa-bars"></i></a>
+            </button>
+        </div>
+    </header>
+    <main class="register__main">
+        <form action="/register" method="post">
+            <div class="datos-usuario">
+                <input type="text" name="nombre" placeholder="Nombre y apellido">
+                <input type="text" name="usuario" placeholder="Nombre de usuario">
+                <input type="email" name="email" placeholder="E-mail">
+            </div>
+            <h3>Fecha de nacimiento</h3>
+            <div class="datos-usuario">
+                <input type="date" name="fecha">
+                <input type="text" name="domicilio" placeholder="Domicilio">
+            </div>
+            <h3>Perfil del Usuario</h3>
+            <div class="perfil-usuario">
+                <div>
+                    <input type="radio" name="tipo-usuario" value="Comprador">
+                    <label for="tipo-usuario">Comprador</label>
+                </div>
+                <div>
+                    <input type="radio" name="tipo-usuario" value="Vendedor">
+                    <label for="tipo-usuario">Vendedor</label>
+                </div>
+            </div>
+            <h3>Intereses</h3>
+            <div class="intereses-usuario">
+                <div>
+                    <input type="checkbox" name="intereses" value="Electro">
+                    <label for="intereses">Electro</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="intereses" value="Moda">
+                    <label for="intereses">Moda</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="intereses" value="Hogar">
+                    <label for="intereses">Hogar</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="intereses" value="Jugueteria">
+                    <label for="intereses">Jugueteria</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="intereses" value="Vida-sana">
+                    <label for="intereses">Vida Sana</label>
+                </div>
+            </div>
+            <div>
+                <button>Enviar</button>
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>
