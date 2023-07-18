@@ -1,0 +1,134 @@
+/* REGISTER */
+
+.register__main{
+    background-color: var(--colorGrisClaro);
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.register__main div.contenedor-form{
+    background-color: var(--colorBlanco);
+    margin: 40px 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.register__main div.contenedor-form div.datos-usuario{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+}
+
+.register__main div.contenedor-form div.datos-usuario input{
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--colorGrisOscuro);
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.register__main div.contenedor-form div.perfil-usuario{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.register__main div.contenedor-form div.intereses-usuario{
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.register__main div.contenedor-form div.intereses-usuario div{
+    
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.register__main div.contenedor-form div.foto-usuario {
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.register__main div.contenedor-form div.foto-usuario input{
+    margin-top: 10px;
+   
+}
+
+
+
+
+/* BOTONES */
+
+.register__main div.contenedor-form div.botones{
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+@media (min-width:481px){
+
+    .register__main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .register__main div.contenedor-form{
+        width: 60%;
+        
+    }
+
+    .register__main div.contenedor-form div.datos-usuario{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .register__main div.contenedor-form div.datos-usuario input{
+        width: 48%;
+    }
+    
+    .register__main div.contenedor-form div.perfil-usuario{
+        justify-content: space-around;
+    }
+
+    .register__main div.contenedor-form div.foto-usuario {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .register__main div.contenedor-form div.foto-usuario input{
+        margin-top: 20px;
+    }
+
+    /* BOTONES */
+    
+    .register__main div.contenedor-form div.botones{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+    .register__main div.contenedor-form div button.primary{
+        width: 48%;
+    }
+
+    .register__main div.contenedor-form div button.secondary{
+        width: 48%;
+    }
+
+
+
+
+}
