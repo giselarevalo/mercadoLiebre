@@ -100,11 +100,14 @@
     padding-top: 5px;
 }
 
-.home__footer p.copyright{
+.home__footer div.copyright{
+    margin-top: 20px;
+}
+
+.home__footer div.copyright p{
     font-weight: 400;
     color: var(--colorGrisOscuro);
     font-size: 12px;
-    text-align: left;
     padding-top: 30px;
     
 }

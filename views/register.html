@@ -38,7 +38,7 @@
             </ul>
             <ul class="opciones2">
                 <li><a href="register">Créa tu cuenta <i class="fas fa-id-card"></i></a></li>
-                <li><a href="">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
@@ -50,56 +50,95 @@
         </div>
     </header>
     <main class="register__main">
-        <form action="/register" method="post">
-            <div class="datos-usuario">
-                <input type="text" name="nombre" placeholder="Nombre y apellido">
-                <input type="text" name="usuario" placeholder="Nombre de usuario">
-                <input type="email" name="email" placeholder="E-mail">
-            </div>
-            <h3>Fecha de nacimiento</h3>
-            <div class="datos-usuario">
-                <input type="date" name="fecha">
-                <input type="text" name="domicilio" placeholder="Domicilio">
-            </div>
-            <h3>Perfil del Usuario</h3>
-            <div class="perfil-usuario">
-                <div>
-                    <input type="radio" name="tipo-usuario" value="Comprador">
-                    <label for="tipo-usuario">Comprador</label>
+        <div class="contenedor-form">
+            <form action='/' method="get">
+                <h3>Datos Personales</h3>
+                <div class="datos-usuario">
+                    <input type="text" name="nombre" placeholder="Nombre y apellido">
+                    <input type="text" name="usuario" placeholder="Nombre de usuario">
+                    <input type="email" name="email" placeholder="E-mail">
                 </div>
-                <div>
-                    <input type="radio" name="tipo-usuario" value="Vendedor">
-                    <label for="tipo-usuario">Vendedor</label>
+                <h3>Fecha de nacimiento</h3>
+                <div class="datos-usuario">
+                    <input type="date" name="fecha">
+                    <input type="text" name="domicilio" placeholder="Domicilio">
                 </div>
-            </div>
-            <h3>Intereses</h3>
-            <div class="intereses-usuario">
-                <div>
-                    <input type="checkbox" name="intereses" value="Electro">
-                    <label for="intereses">Electro</label>
+                <h3>Perfil del Usuario</h3>
+                <div class="perfil-usuario">
+                    <div>
+                        <input type="radio" name="tipo-usuario" value="Comprador">
+                        <label for="tipo-usuario">Comprador</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tipo-usuario" value="Vendedor">
+                        <label for="tipo-usuario">Vendedor</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="checkbox" name="intereses" value="Moda">
-                    <label for="intereses">Moda</label>
+                <h3>Interéses</h3>
+                <div class="intereses-usuario">
+                    <div>
+                        <input type="checkbox" name="intereses" value="Electro">
+                        <label for="intereses">Electro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Moda">
+                        <label for="intereses">Moda</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Hogar">
+                        <label for="intereses">Hogar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Jugueteria">
+                        <label for="intereses">Jugueteria</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Vida-sana">
+                        <label for="intereses">Vida Sana</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="checkbox" name="intereses" value="Hogar">
-                    <label for="intereses">Hogar</label>
+                <h3>Foto de usuario</h3>
+                    <div class="foto-usuario">
+                        <label for="foto-usuario"> Selecciona una imagen para tu perfil : </label>
+                        <input type="file" name="foto-usuario" accept=".jpg,.png">
+                    </div>
+                    <div class="datos-usuario">
+                        <label for="password"> Ingresa una contraseña :</label>
+                        <div class="datos-usuario">
+                            <input type="password" placeholder="Contraseña">
+                            <input type="password" placeholder="Confirmar contraseña">  
+                        </div>
+                    </div>
+                <div class="botones">
+                    <button type="submit" class="primary">Enviar</button>
+                    <button type="reset" class="secondary">Borrar</button>
                 </div>
-                <div>
-                    <input type="checkbox" name="intereses" value="Jugueteria">
-                    <label for="intereses">Jugueteria</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="intereses" value="Vida-sana">
-                    <label for="intereses">Vida Sana</label>
-                </div>
-            </div>
-            <div>
-                <button>Enviar</button>
-            </div>
-        </form>
-
+               
+            </form>
+        </div>
     </main>
+    <footer class="home__footer">
+        <section>
+            <i class="fas fa-credit-card"></i>
+            <h4>Pagá con tarjeta o en efectivo</h4>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </section>
+        <section>
+            <i class="fas fa-gift"></i>
+            <h4>Envío gratis desde $ 2.500</h4>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </section>
+
+        <section>
+            <i class="fas fa-user-shield"></i>
+            <h4>Seguridad, de principio a fin</h4>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </section>
+        <div class="copyright">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </div>
+
+    </footer>
 </body>
 </html>
