@@ -50,6 +50,10 @@
 
 
 
+/* MEDIAS QUERIES */
+
+/* TABLET */
+
 @media(min-width:481px){
 
     .login__main{
